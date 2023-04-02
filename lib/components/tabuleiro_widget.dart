@@ -1,8 +1,6 @@
 import 'package:campo_minado__flutter/components/campo_widget.dart';
 import 'package:campo_minado__flutter/models/campo.dart';
 import 'package:campo_minado__flutter/models/tabuleiro.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/widgets.dart';
 
 class TabuleiroWidget extends StatelessWidget {
