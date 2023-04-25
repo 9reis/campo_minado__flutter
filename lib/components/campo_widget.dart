@@ -36,6 +36,5 @@ class CampoWidget extends StatelessWidget {
     } else {
       return Image.asset('assets/images/fechado.jpeg');
     }
-    return null!;
   }
 }

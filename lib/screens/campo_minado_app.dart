@@ -3,6 +3,7 @@ import 'package:campo_minado__flutter/components/tabuleiro_widget.dart';
 import 'package:campo_minado__flutter/models/campo.dart';
 import 'package:campo_minado__flutter/models/explosao_exception.dart';
 import 'package:campo_minado__flutter/models/tabuleiro.dart';
+
 import 'package:flutter/material.dart';
 
 class CampoMinadoApp extends StatefulWidget {
@@ -53,7 +54,7 @@ class _CampoMinadoAppState extends State<CampoMinadoApp> {
       _tabuleiro = Tabuleiro(
         linhas: qtdeLinhas,
         colunas: qtdeColunas,
-        qtdeBombas: 3,
+        qtdeBombas: 10,
       );
     }
     return _tabuleiro!;
@@ -78,7 +79,7 @@ class _CampoMinadoAppState extends State<CampoMinadoApp> {
         }
       } on ExplosaoException {
         _venceu = false;
-        _tabuleiro!.revelarBomba();
+        _tabuleiro!.revelarBombas();
       }
     });
   }
